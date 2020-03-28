@@ -73,15 +73,18 @@ header {
 }
 .main-visual p {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
+}
+.main-visual_word {
+  font-size: 20px;
 }
 .main-visual p:last-child {
   font-size: 20px;
-  font-weight: 600;
+  line-height: 22px;
 }
 .main-visual_title img {
   width: 317px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .conversion {
@@ -94,11 +97,14 @@ header {
   font-weight: 600;
   color: white;
 }
-.top-textstyle {
+.top_text {
+  margin-bottom: 70px;
+}
+.top_text span {
   color: #c7254e;
   background: #F9F2F4;
   border-radius: 4px;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 18px;
 }
 .top-button {
   background-color: #da6b64;
@@ -117,7 +123,11 @@ header {
   margin-bottom: 0;
 }
 .conversion-under p {
-  margin-bottom: 10px;
+  font-size: 21px;
+  margin-bottom: 33px;
+}
+.conversion-under p:last-child {
+  margin-bottom: 0;
 }
   .wrapper {
     display: none;
@@ -167,8 +177,8 @@ header {
 .introduction-top::before {
   content: "";
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 46px;
+  width: 46px;
 } 
 .introduction-text {
   text-align: center;
