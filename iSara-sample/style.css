@@ -20,37 +20,40 @@ li {
 header {
   background: white;
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
   height: 75px;
 } 
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 13px;
   max-width: 1170px;
   margin: 0 auto;
 }
 .logo {
+  position: relative;
+  top: 1px;
   width: 128px;
 }
 .sub-title {
-  font-weight: 600;
+  position: relative;
   font-size: 14px;
-  bottom: 10px;
+  bottom: 8px;
+  font-weight: bold;
 }
 .header-button {
-  display: flex;
   background-color: #da6b64;
   font-size: 14px;
-  color: white;
+  color: #fff;
   height: 44px;
   cursor: pointer;
   border-radius: 25px;
-  width: 300px;
+  padding: 11px 40px;
+  margin-top: 2.5px;
 }
-.header-button span {
-  margin: auto auto;
+.header-button p {
+  font-weight: 200;
 }
 .header-button:hover {
   background-color: #d14e44;
@@ -215,6 +218,8 @@ header {
 }
 .about-title h2 {
   margin: 20px 0 10px;
+  font-size: 28px;
+  line-height: 40px;
 }
 .about-title::before {
   top: 0;
@@ -248,8 +253,9 @@ header {
   border: 2px solid #ebb94d;
   background-color: white;
 }
-.about-box p {
+.about-box > p {
   font-size: 20px;
+  font-weight: bold;
   margin: 0 0 10px;
 }
 .about-container {
@@ -260,6 +266,7 @@ header {
 }
 .about-item {
   padding: 10px;
+  margin-right: 5px;
 }
 .about-item p {
   font-size: 12px;
@@ -304,6 +311,7 @@ header {
   color: white;
   background: #EBB94D;
   border-radius: 5px;
+  font-size: 16px;
 }
 .about-step-item p:nth-child(even) {
   font-size: 14px;
@@ -313,7 +321,7 @@ header {
   font-size: 16px;
 }
 
-.aboutthird {
+.about_message {
   background: #016EA9;
   padding: 40px 0;
   text-align: center;
@@ -815,8 +823,86 @@ form input:last-child {
   font-size: 23px;
   font-weight: 600;
   cursor: pointer;
-
 }
 input,textarea {
   font-size: 14px;
+}
+
+.text-wrap {
+  display: none;
+}
+
+@media screen and (max-width:1190px) and (min-width: 768px){
+  .header-top {
+    margin: 0 1%;
+  }
+  /* .about-step */
+  .about-step-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+  }
+  .about-step-item {
+    width: calc(100% - 37%);
+    margin-bottom: 20px;
+  }
+  .about-step-item h3 {
+    font-size: 14px;
+  }
+  .about-step-item p:nth-child(even) {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .about-step-item p:nth-child(odd) {
+    font-size: 14px;
+  }
+  .about-step h2 {
+    font-size: 24px;
+  }
+  .about-step p {
+    font-size: 16px;
+  }
+  .about_message {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   /* .about-step */
+  .about-step {
+    padding: 30px;
+    background-image: url(img/aboutsecondbgsp.jpg);
+  }
+  .about-step h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about-step > p {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+  .about-step-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-step-item {
+    width:100%;
+    margin-bottom: 15px;
+    padding: 15px 50px;
+  }
+  .about-step-item h3 {
+    font-size: 12px;
+  }
+  .about-step-item p:nth-child(even) {
+    font-size: 12px;
+    margin: 15px 0 5px;
+    letter-spacing: 0;
+  }
+  .about-step-item p:nth-child(odd) {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .text-wrap {
+    display: block;
+  }
 }
